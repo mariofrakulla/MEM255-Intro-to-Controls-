@@ -1,6 +1,4 @@
 %% Number 1
-
-
 syms s x
 c = 0.6;
 w = 1;
@@ -79,11 +77,12 @@ title('w=2, c=0.2');
 %% Number 2
 %spoke to Prof Chang and learned of new way to specify variables and
 %functions hence it is slightly changed from above
-
+clear all
+clc
 zeta = .6;
 w0 = 1;
-sys = tf(w0^2,[1,2*zeta*w0,w0^2]);
 figure(2)
+sys = tf(w0^2,[1,2*zeta*w0,w0^2]);
 subplot(1,3,1);
 step(sys);
 title('w=1, c=0.6');
